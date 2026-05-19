@@ -25,6 +25,14 @@ Zum Veröffentlichen in GitHub:
 
 Danach stellt GitHub die REVO-Seite automatisch bereit.
 
+Die geplante Custom Domain für REVO ist:
+
+```text
+revo.saschaskaskaden.de
+```
+
+Bei IONOS muss dafür die Subdomain `revo` als `CNAME` auf `saschkatm-a11y.github.io` zeigen.
+
 ## Architektur
 
 - Expo / React Native mobile app
