@@ -557,6 +557,10 @@ h3 {
   line-height: 1;
 }
 
+.legal-title-mobile {
+  display: none;
+}
+
 .doc-page h2 {
   padding-top: 26px;
   margin-top: 34px;
@@ -786,6 +790,14 @@ h3 {
   .doc-page h1 {
     font-size: clamp(31px, 9vw, 42px);
     line-height: 1.04;
+  }
+
+  .legal-title-desktop {
+    display: none;
+  }
+
+  .legal-title-mobile {
+    display: inline;
   }
 
   .doc-page h2 {

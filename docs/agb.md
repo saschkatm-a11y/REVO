@@ -4,7 +4,10 @@ title: Nutzungsbedingungen und rechtliche Hinweise für REVO
 description: AGB, Nutzungsbedingungen und rechtliche Hinweise für REVO.
 ---
 
-# Nutzungsbedingungen und rechtliche Hinweise für REVO
+<h1 class="legal-title" aria-label="Nutzungsbedingungen und rechtliche Hinweise für REVO">
+  <span class="legal-title-desktop">Nutzungsbedingungen und rechtliche Hinweise für REVO</span>
+  <span class="legal-title-mobile" aria-hidden="true">Nutzungs-<br />bedingungen und rechtliche Hinweise für REVO</span>
+</h1>
 
 Stand: 2026
 
@@ -215,4 +218,3 @@ Ohne Zustimmung darf die App nicht verwendet werden.
 ## 16. Salvatorische Klausel
 
 Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
-
