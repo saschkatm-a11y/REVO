@@ -9,7 +9,7 @@
     />
     <meta name="theme-color" content="#14B8A6" />
     <title>REVO | Private Rechnungserstellung</title>
-    <link rel="canonical" href="http://revo.saschaskaskaden.de/?v=1ee5d3fb-2" />
+    <link rel="canonical" href="http://revo.saschaskaskaden.de/" />
     <link rel="icon" href="assets/revo-app-icon.png" />
     <link rel="apple-touch-icon" href="assets/revo-app-icon.png" />
     <link rel="stylesheet" href="styles.css" />
@@ -206,12 +206,10 @@
     </footer>
     <script>
       (() => {
-        const currentVersion = "1ee5d3fb-2";
         const params = new URLSearchParams(window.location.search);
 
-        if (params.has("v") && params.get("v") !== currentVersion) {
-          params.set("v", currentVersion);
-          window.location.replace(`${window.location.pathname}?${params.toString()}${window.location.hash}`);
+        if (params.has("v")) {
+          window.history.replaceState(null, "", `${window.location.pathname}${window.location.hash}`);
         }
       })();
     </script>
