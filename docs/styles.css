@@ -561,6 +561,10 @@ h3 {
   display: none;
 }
 
+.legal-title-mobile span {
+  display: block;
+}
+
 .doc-page h2 {
   padding-top: 26px;
   margin-top: 34px;
@@ -706,6 +710,14 @@ h3 {
   .feature-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .legal-title-desktop {
+    display: none;
+  }
+
+  .legal-title-mobile {
+    display: block;
+  }
 }
 
 @media (max-width: 620px) {
@@ -788,16 +800,8 @@ h3 {
   }
 
   .doc-page h1 {
-    font-size: clamp(31px, 9vw, 42px);
-    line-height: 1.04;
-  }
-
-  .legal-title-desktop {
-    display: none;
-  }
-
-  .legal-title-mobile {
-    display: inline;
+    font-size: clamp(28px, 8vw, 36px);
+    line-height: 1.08;
   }
 
   .doc-page h2 {

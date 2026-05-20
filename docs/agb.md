@@ -6,7 +6,12 @@ description: AGB, Nutzungsbedingungen und rechtliche Hinweise für REVO.
 
 <h1 class="legal-title" aria-label="Nutzungsbedingungen und rechtliche Hinweise für REVO">
   <span class="legal-title-desktop">Nutzungsbedingungen und rechtliche Hinweise für REVO</span>
-  <span class="legal-title-mobile" aria-hidden="true">Nutzungs-<br />bedingungen und rechtliche Hinweise für REVO</span>
+  <span class="legal-title-mobile" aria-hidden="true">
+    <span>Nutzungs-</span>
+    <span>bedingungen</span>
+    <span>und rechtliche Hinweise</span>
+    <span>für REVO</span>
+  </span>
 </h1>
 
 Stand: 2026
