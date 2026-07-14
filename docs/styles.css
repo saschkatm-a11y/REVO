@@ -10,6 +10,7 @@
   --accent: #14b8a6;
   --accent-strong: #38d6c4;
   --accent-dark: #0d7d72;
+  --display-accent: #7da9a4;
   --serif: "Bodoni 72", Didot, "Times New Roman", serif;
   --sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -294,7 +295,7 @@ figure {
 .hero-display {
   width: 100%;
   margin: 0;
-  color: var(--accent-strong);
+  color: var(--display-accent);
   font-family: var(--serif);
   font-weight: 400;
   line-height: 0.78;
@@ -540,7 +541,7 @@ figure {
   left: -30px;
   z-index: 3;
   margin: 0;
-  color: var(--accent-strong);
+  color: var(--display-accent);
   font-family: var(--serif);
   font-size: 170px;
   line-height: 0.8;
