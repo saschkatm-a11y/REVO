@@ -1,219 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="REVO ist eine private Offline-First-App zur einfachen digitalen Rechnungserstellung und Betriebsverwaltung für den deutschen Markt."
-    />
-    <meta name="theme-color" content="#14B8A6" />
-    <title>REVO | Private Rechnungserstellung</title>
-    <link rel="canonical" href="http://revo.saschaskaskaden.de/" />
-    <link rel="icon" href="assets/revo-app-icon.png" />
-    <link rel="apple-touch-icon" href="assets/revo-app-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+      content="REVO ist eine private Offline-First-App für Rechnungen, Bestellungen, Produkte und Finanzen."
+    >
+    <meta name="theme-color" content="#090b0a">
+    <meta property="og:title" content="REVO | Einfache Rechnungserstellung">
+    <meta
+      property="og:description"
+      content="Rechnungen, Bestellungen und Finanzen lokal verwalten. Privat, schnell und offline nutzbar."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://revo.saschaskaskaden.de/">
+    <meta property="og:image" content="http://revo.saschaskaskaden.de/assets/revo-app-icon.png">
+    <title>REVO | Einfache Rechnungserstellung</title>
+    <link rel="canonical" href="http://revo.saschaskaskaden.de/">
+    <link rel="icon" href="/assets/revo-app-icon.png">
+    <link rel="apple-touch-icon" href="/assets/revo-app-icon.png">
+    <link rel="preload" href="/assets/revo-documents.jpg" as="image">
+    <link rel="stylesheet" href="/styles.css">
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
-  <body>
-    <header class="site-header">
+  <body class="landing-body">
+    <header class="site-header landing-header" data-header>
+      <nav class="header-nav header-nav-left" aria-label="Seitennavigation links">
+        <a href="#about">Über REVO</a>
+        <a href="#features">Funktionen</a>
+      </nav>
+
       <a class="brand" href="#top" aria-label="REVO Startseite">
-        <img src="assets/revo-app-icon.png" alt="" />
+        <img src="/assets/revo-app-icon.png" alt="">
         <span>REVO</span>
       </a>
-      <nav class="top-nav" aria-label="Seitennavigation">
+
+      <nav class="header-nav header-nav-right" aria-label="Seitennavigation rechts">
         <a href="#downloads">Download</a>
-        <a href="app-tutorial.html">Tutorial</a>
-        <a href="agb.html">AGB</a>
+        <a href="/app-tutorial.html">Tutorial</a>
+        <a href="/agb.html">AGB</a>
+      </nav>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Navigation öffnen"
+        aria-controls="mobile-navigation"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <nav id="mobile-navigation" class="mobile-navigation" aria-label="Mobile Navigation" data-mobile-navigation>
+        <a href="#about">Über REVO</a>
+        <a href="#features">Funktionen</a>
+        <a href="#downloads">Download</a>
+        <a href="/app-tutorial.html">Tutorial</a>
+        <a href="/agb.html">AGB</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <span class="eyebrow">Version 1.0.0 · Offline-First · Privat</span>
-          <h1>REVO</h1>
-          <p class="lead">
-            Eine moderne private App für einfache digitale Rechnungen, Bestellungen, Produkte, Kunden, Finanzen,
-            Monatsabschluss und Backups.
-          </p>
-          <div class="hero-actions">
-            <a class="primary-action" href="app-tutorial.html">App-Tutorial öffnen</a>
-            <a class="secondary-action" href="#downloads">APK herunterladen</a>
-          </div>
-        </div>
-
-        <div class="phone-preview" aria-label="REVO App Vorschau">
-          <div class="phone-shell">
-            <div class="phone-screen">
-              <div class="status-row">
-                <span>9:41</span>
-                <span>REVO</span>
-              </div>
-              <img class="app-icon" src="assets/revo-app-icon.png" alt="REVO App Icon" />
-              <div class="metric-card accent">
-                <span>Gewinn nach MwSt.</span>
-                <strong>0,00 €</strong>
-              </div>
-              <div class="grid">
-                <div class="tile">Bestellungen</div>
-                <div class="tile">Produkte</div>
-                <div class="tile">Rechnungen</div>
-                <div class="tile">Backup</div>
-              </div>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-visual" aria-hidden="true">
+          <img class="hero-photo" src="/assets/revo-documents.jpg" alt="">
+          <div class="hero-device">
+            <div class="device-status"><span>9:41</span><span>REVO</span></div>
+            <img class="device-logo" src="/assets/revo-app-icon.png" alt="">
+            <div class="device-metric">
+              <span>Gewinn nach MwSt.</span>
+              <strong>0,00 €</strong>
+            </div>
+            <div class="device-grid">
+              <span>Bestellungen</span>
+              <span>Produkte</span>
+              <span>Rechnungen</span>
+              <span>Backup</span>
             </div>
           </div>
         </div>
-      </section>
 
-      <section id="features" class="section">
-        <div class="section-heading">
-          <span class="eyebrow">Alles lokal verwalten</span>
-          <h2>Wichtige Funktionen</h2>
-          <p>REVO startet leer, bleibt übersichtlich und ist auf schnelle interne Nutzung ausgelegt.</p>
+        <div class="hero-type reveal-item is-visible">
+          <p class="hero-kicker">Privat · Offline-First · Version 1.0.0</p>
+          <h1 id="hero-title">REVO</h1>
+          <p class="hero-display" aria-hidden="true">RECHNUNGEN</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <span class="feature-icon">01</span>
-            <h3>Kunden & Produkte</h3>
-            <p>Kunden, Kategorien, Produkte, Einkaufspreise, Verkaufspreise, MwSt.-Sätze und Einheiten sauber pflegen.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">02</span>
-            <h3>Bestellungen</h3>
-            <p>Bestellungen aus der Produktliste erstellen, Mengen eintragen und daraus Rechnungen erzeugen.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">03</span>
-            <h3>Rechnungen</h3>
-            <p>Fortlaufende Rechnungsnummern, PDF-Erstellung, Suche und Zahlungsstatus für den Alltag.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">04</span>
-            <h3>Finanzen</h3>
-            <p>Umsatz, MwSt. 7% / 19%, offene Forderungen und Laden-Gewinn im aktuellen Monat sehen.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">05</span>
-            <h3>Monatsabschluss</h3>
-            <p>Monatsarchiv als ZIP erstellen und abgeschlossene Rechnungen danach aus der aktiven App bereinigen.</p>
-          </article>
-          <article class="feature-card">
-            <span class="feature-icon">06</span>
-            <h3>Backups</h3>
-            <p>Lokale Backups erstellen und optional Google Drive für Uploads verwenden.</p>
-          </article>
+        <div class="hero-caption">
+          <p>Einfache digitale Rechnungserstellung für den deutschen Markt.</p>
+          <a href="#about">REVO entdecken <span aria-hidden="true">↓</span></a>
         </div>
       </section>
 
-      <section id="workflow" class="section split-section">
-        <div>
-          <span class="eyebrow">Erster Start</span>
-          <h2>Klare Reihenfolge</h2>
-          <p>
-            REVO schützt den Startablauf: Erst Nutzungsbedingungen akzeptieren, dann Firmendaten einrichten oder
-            überspringen, danach öffnet sich das Dashboard.
-          </p>
-        </div>
-        <ol class="timeline">
-          <li>
-            <strong>Nutzungsbedingungen</strong>
-            <span>Alle Hinweise bestätigen, bevor die App genutzt werden kann.</span>
-          </li>
-          <li>
-            <strong>Firmendaten</strong>
-            <span>Firmenname, Adresse, Steuernummer, USt-IdNr. und Logo für Rechnungen eintragen.</span>
-          </li>
-          <li>
-            <strong>Dashboard</strong>
-            <span>Mit Kunden, Produkten, Bestellungen, Rechnungen und Finanzen arbeiten.</span>
-          </li>
-        </ol>
-      </section>
-
-      <section id="privacy" class="section privacy-panel">
-        <div>
-          <span class="eyebrow">Keine Serverkosten</span>
-          <h2>Offline-First und lokal</h2>
-          <p>
-            Daten, PDFs, Archive und Backups werden lokal auf dem Gerät gespeichert. Google Drive ist nur optional.
-            Die App bleibt auch ohne Internet nutzbar.
-          </p>
-        </div>
-        <div class="storage-list">
-          <span>SQLite-Datenbank</span>
-          <span>Rechnungs-PDFs</span>
-          <span>Bestelllisten</span>
-          <span>Monatsarchive</span>
-          <span>Lokale Backups</span>
-        </div>
-      </section>
-
-      <section id="downloads" class="section download-section">
-        <div class="section-heading">
-          <span class="eyebrow">REVO herunterladen</span>
-          <h2>Download & Release</h2>
-          <p>
-            Die aktuelle Version steht als Android-APK bereit. REVO ist ein privates Hobby-Projekt und wird nicht über
-            einen App Store verteilt.
-          </p>
-        </div>
-
-        <div class="download-panel">
-          <article class="download-card primary-download">
-            <div>
-              <span class="download-label">Android APK</span>
-              <h3>REVO 1.0.0</h3>
-              <p>Direkter Download der aktuellen APK-Datei für Android-Geräte.</p>
-            </div>
-            <a
-              class="download-button"
-              href="https://github.com/saschkatm-a11y/REVO/releases/download/v1.0.0/REVO-1.0.0.apk"
-              rel="noreferrer"
-            >
-              APK herunterladen
-            </a>
-          </article>
-
-          <article class="download-card">
-            <div>
-              <span class="download-label">GitHub Release</span>
-              <h3>Release-Seite</h3>
-              <p>Alle Dateien, Versionsstand und Projektinformationen auf GitHub ansehen.</p>
-            </div>
-            <a class="download-button secondary" href="https://github.com/saschkatm-a11y/REVO/releases/tag/v1.0.0" rel="noreferrer">
-              Release öffnen
-            </a>
-          </article>
-        </div>
-      </section>
-
-      <section class="section notice">
-        <h2>Wichtiger Hinweis</h2>
-        <p>
-          REVO ist ein kostenloses privates Hobby-Projekt. Die App stellt keine steuerliche, rechtliche,
-          buchhalterische oder finanzielle Beratung dar. Rechnungen und Steuerangaben sollten vor Verwendung geprüft
-          werden.
+      <section id="about" class="intro-section section-shell reveal-item" aria-labelledby="intro-title">
+        <p class="section-number">01 · ÜBER REVO</p>
+        <h2 id="intro-title">Einfach schreiben.<br>Sauber verwalten.</h2>
+        <p class="intro-copy">
+          REVO verbindet Rechnungen, Bestellungen, Produkte, Kunden und Finanzen in einer ruhigen mobilen App. Alle
+          wichtigen Daten bleiben lokal auf deinem Gerät und stehen auch ohne Internet zur Verfügung.
         </p>
-        <p>Für weitere Informationen lesen Sie bitte die AGB und rechtlichen Hinweise.</p>
-        <div class="notice-actions">
-          <a class="notice-button" href="agb.html">AGB lesen</a>
+        <div class="intro-actions">
+          <a class="accent-button" href="#downloads">APK herunterladen <span aria-hidden="true">↓</span></a>
+          <a class="line-link" href="/app-tutorial.html">Tutorial öffnen <span aria-hidden="true">→</span></a>
         </div>
+      </section>
+
+      <section class="visual-story" aria-label="REVO Produktansicht">
+        <figure class="story-image story-image-left reveal-item">
+          <img src="/assets/revo-finance.jpg" alt="Unterlagen und Taschenrechner auf einem Tisch" loading="lazy">
+          <figcaption>FINANZEN</figcaption>
+        </figure>
+
+        <div class="dashboard-preview reveal-item" role="img" aria-label="Stilisierte REVO Dashboard-Vorschau">
+          <div class="dashboard-topline">
+            <span>Dashboard</span>
+            <span>Juli 2026</span>
+          </div>
+          <div class="dashboard-balance">
+            <span>Saldo</span>
+            <strong>0,00 €</strong>
+            <small>Alle Werte lokal gespeichert</small>
+          </div>
+          <div class="dashboard-list">
+            <span><b>00</b> Offene Rechnungen</span>
+            <span><b>00</b> Bestellungen</span>
+            <span><b>00</b> Produkte</span>
+          </div>
+        </div>
+
+        <figure class="story-image story-image-right reveal-item">
+          <img src="/assets/revo-documents.jpg" alt="Person füllt ein Dokument aus" loading="lazy">
+          <figcaption>DOKUMENTE</figcaption>
+        </figure>
+
+        <p class="story-word" aria-hidden="true">OFFLINE</p>
+      </section>
+
+      <section id="features" class="features-section section-shell" aria-labelledby="features-title">
+        <header class="features-heading reveal-item">
+          <p class="section-number">02 · FUNKTIONEN</p>
+          <h2 id="features-title">Alles an einem Ort.</h2>
+          <p>Die wichtigsten Bereiche bleiben schnell erreichbar und klar voneinander getrennt.</p>
+        </header>
+
+        <div class="feature-list">
+          <article class="feature-row reveal-item">
+            <span>01</span>
+            <h3>Rechnungen</h3>
+            <p>Fortlaufende Nummern, PDF-Export, MwSt. und Zahlungsstatus.</p>
+          </article>
+          <article class="feature-row reveal-item">
+            <span>02</span>
+            <h3>Bestellungen</h3>
+            <p>Produkte und Mengen erfassen und daraus direkt Rechnungen erstellen.</p>
+          </article>
+          <article class="feature-row reveal-item">
+            <span>03</span>
+            <h3>Produkte &amp; Kunden</h3>
+            <p>Sortiment, Kategorien, Preise und Kundendaten übersichtlich verwalten.</p>
+          </article>
+          <article class="feature-row reveal-item">
+            <span>04</span>
+            <h3>Finanzen</h3>
+            <p>Umsatz, Gewinn, offene Forderungen sowie 7 % und 19 % MwSt. im Blick behalten.</p>
+          </article>
+          <article class="feature-row reveal-item">
+            <span>05</span>
+            <h3>Backup &amp; Abschluss</h3>
+            <p>Lokale Sicherungen und Monatsarchive als ZIP-Datei erstellen.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="offline-section" aria-labelledby="offline-title">
+        <div class="section-shell offline-layout">
+          <div class="offline-title reveal-item">
+            <p class="section-number">03 · LOKAL ZUERST</p>
+            <h2 id="offline-title">DEINE DATEN.<br>DEIN GERÄT.</h2>
+          </div>
+          <div class="offline-copy reveal-item">
+            <p>
+              SQLite-Datenbank, PDFs, Bestelllisten und Archive werden lokal gespeichert. Google Drive ist optional;
+              REVO bleibt ohne Verbindung vollständig nutzbar.
+            </p>
+            <ul>
+              <li>Keine Serverkosten</li>
+              <li>Offline nutzbar</li>
+              <li>Lokale PDF-Dateien</li>
+              <li>Eigener Backup-Speicherort</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="downloads" class="download-section" aria-labelledby="download-title">
+        <div class="download-graphic" aria-hidden="true">
+          <img src="/assets/revo-app-icon.png" alt="">
+        </div>
+        <div class="section-shell download-content reveal-item">
+          <p class="section-number">04 · DOWNLOAD</p>
+          <h2 id="download-title">REVO<br>1.0.0</h2>
+          <p>Die aktuelle Android-Version steht als direkte APK und über die GitHub-Release-Seite bereit.</p>
+          <div class="download-actions">
+            <a
+              class="accent-button"
+              href="https://github.com/saschkatm-a11y/REVO/releases/download/v1.0.0/REVO-1.0.0.apk"
+            >
+              APK herunterladen <span aria-hidden="true">↓</span>
+            </a>
+            <a
+              class="line-link"
+              href="https://github.com/saschkatm-a11y/REVO/releases/tag/v1.0.0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Release ansehen <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="notice-section section-shell reveal-item" aria-labelledby="notice-title">
+        <p class="section-number">WICHTIGER HINWEIS</p>
+        <h2 id="notice-title">Hilfestellung, keine Beratung.</h2>
+        <p>
+          REVO ist ein kostenloses privates Hobby-Projekt und ersetzt keine steuerliche, rechtliche, buchhalterische
+          oder finanzielle Beratung. Bitte prüfe erzeugte Rechnungen vor der Verwendung selbst.
+        </p>
+        <a class="line-link" href="/agb.html">AGB und rechtliche Hinweise <span aria-hidden="true">→</span></a>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>© 2026 REVO</span>
-      <span>Entwickelt von Daniel Kleis aka. SaschkaTM</span>
+      <a class="footer-brand" href="#top">
+        <img src="/assets/revo-app-icon.png" alt="">
+        <span>REVO</span>
+      </a>
+      <nav aria-label="Fußnavigation">
+        <a href="/app-tutorial.html">Tutorial</a>
+        <a href="/agb.html">AGB</a>
+        <a href="https://github.com/saschkatm-a11y/REVO" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+      <div class="footer-meta">
+        <span>© 2026 REVO</span>
+        <span>Entwickelt von Daniel Kleis aka. SaschkaTM</span>
+        <a href="https://unsplash.com" target="_blank" rel="noopener noreferrer">Fotos: Unsplash</a>
+      </div>
     </footer>
-    <script>
-      (() => {
-        const params = new URLSearchParams(window.location.search);
 
-        if (params.has("v")) {
-          window.history.replaceState(null, "", `${window.location.pathname}${window.location.hash}`);
-        }
-      })();
-    </script>
+    <script src="/site.js"></script>
   </body>
 </html>
