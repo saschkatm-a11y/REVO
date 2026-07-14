@@ -294,10 +294,15 @@ figure {
 .hero-display {
   width: 100%;
   margin: 0;
+  color: var(--accent-strong);
   font-family: var(--serif);
   font-weight: 400;
   line-height: 0.78;
   text-align: center;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.96);
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.9),
+    0 8px 24px rgba(0, 0, 0, 0.8);
 }
 
 .hero h1 {
@@ -310,7 +315,6 @@ figure {
   position: relative;
   z-index: 1;
   margin-top: 42px;
-  color: rgba(247, 248, 246, 0.9);
   font-size: 112px;
 }
 
@@ -536,11 +540,15 @@ figure {
   left: -30px;
   z-index: 3;
   margin: 0;
-  color: rgba(247, 248, 246, 0.95);
+  color: var(--accent-strong);
   font-family: var(--serif);
   font-size: 170px;
   line-height: 0.8;
   text-align: center;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.96);
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.9),
+    0 8px 24px rgba(0, 0, 0, 0.8);
   pointer-events: none;
 }
 
